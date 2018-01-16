@@ -1,0 +1,23 @@
+.backg {
+    position:static; 
+    width:100%; 
+    height:80%;   
+}
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "Oswald";
+    font-size: 355px;
+}
+li{
+    color:cadetblue;
+}
+.ciclo {
+    position:static; 
+    height: 400px; 
+    width: 500px;
+    margin-left: 120px;
+}
