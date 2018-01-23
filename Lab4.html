@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="miestilo.css">
+    <title> Labs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <head> 
+    <div class="w3-top">
+      <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s3">
+          <a href="Lab1.html" class="w3-button w3-block w3-black">Lab1 y Lab3</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="Lab4.html" class="w3-button w3-block w3-black">Lab4</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="" class="w3-button w3-block w3-black">Lab5</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="" class="w3-button w3-block w3-black">Lab6</a>
+        </div>
+      </div>
+    </div>
+    </head>
+    
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Maritza Rosales</b></h1>
+        <h6>Bienvenido a <span class="w3-tag">JAVASCRIPT</span></h6>
+    </header>
+    
+    <body class="w3-light-grey">
+    
+        <img class="backg" src = "images/back.jpg"> 
+        
+        
+        <article class="w3-col l8 s12">
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+                <div class="w3-center">
+                    <h2>Es invierno...</h2>
+                </div>
+                <div><center><img id ="gif" src = "images/animacion.gif"> </center></div>
+                <div class="w3-center">
+                  <h2>Preguntas a responder</h2>
+                  <h4>Laboratorio 4, <span class="w3-opacity">22 enero, 2018</span></h4>
+                  <br><br>
+                    <div class="w3-justify" style="font-size: 18px;">     
+                        <p><strong><h3> Información </h3></strong> </p>
+                        <br>
+                        <ul> 
+                            <li> ¿Qué diferencias y semejanzas hay entre Java y JavaScript?</li><p> Internet es la Red de Redes, en cambio la World Wide Web es el sistema que usamos para acceder a Internet.</p>
+
+                            <li> ¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</li> <p>Se debe utilizar el método POST ya que lo enviado será invisible para el usuario.</p>
+
+                            <li> ¿Qué métodos tienen los arreglos? (Menciona al menos 5*) </li> <p>GET</p>
+
+                            <li> ¿Cómo se declara una variable con alcance local dentro de una función? </li> <p>No, este código es un identificador para peticiones correctas.</p>
+
+                            <li> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </li><p> No necesariamente. Este código indica que no se encontró el recurso pero no necesariamente porque no exista, sino que el desarrollador pudo haberlo escondido a su conveniencia.</p>
+
+                            <li> ¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</li> <p> Sí, porque generalmente cuando sucede esto es porque hay algún fallo en la programación, o se ha llevado a cabo algún cambio en la plantilla o tema del sitio web y  no se ha tomado la precaución de hacer una copia de seguridad.</p>
+
+                            
+                        </ul>
+                    </div>
+                </div> 
+            </div>   
+        </article>
+        
+        <aside class="w3-col l4">
+          <div class="w3-white w3-margin">
+            <img src="images/M.jpeg" style="width:100%" class="w3-grayscale">
+            <div class="w3-container w3-black">
+              <h4>Acerca de mí</h4>
+              <p>Soy una estudiante del 5° semestre de Ingeniería en Sistemas Computacionales en el Tecnológico de 
+                  Monterrey Campus Querétaro. Soy una chica alegre que le gusta disfrutar de su tiempo libre con su pareja y familia.</p>
+            </div>
+          </div>
+        
+
+          <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                  <h4>Posts populares</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="Definiciones.html">Lab1 y 3</a></span>
+                    <br>
+                    <span>Aprende nuevos conceptos...</span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="Questionario.html">Questionario BD</a></span>
+                    <br>
+                    <span>Lo que no sabías...</span>
+                  </li>
+                </ul>
+          </div>
+        </aside>
+        
+        <script>
+            function Estudiante(nombre){
+               this.nombre = nombre;   
+            }
+                
+            var nombre = prompt("Escribe tu nombre:");
+            var estudiante = new Estudiante(nombre);
+                        
+            Estudiante.prototype.abrigar = function(){
+                 alert('Hola, ¡bienvenido, '+nombre+'! Abrígate bien, hace frío')    
+            }
+                        
+            estudiante.abrigar();
+            
+        </script>
+            
+    </body>
+    
+    <footer>
+        
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Arriba</a> 
+        <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
+        <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>
+    </footer>
+    
+
+</html>
