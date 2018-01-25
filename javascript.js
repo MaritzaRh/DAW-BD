@@ -137,11 +137,6 @@ var button = document.querySelectorAll("button");
  
  function selection(name) {
    switch (name) {
-     case "button":
-		   var letras = document.querySelector('#sentencia').value;
-		   var sentencia = new Oracion(letras);
-		   sentencia.analiza();
-		   break;
      case "button1":
 		  problema.textContent = "Entrada: un número pedido con un '/prompt/'. '/Salida/': Una tabla con los números del 1 al número dado con sus cuadrados y '/cubos. Utiliza document.write'/ para producir la salida "
 		  text.textContent="";
