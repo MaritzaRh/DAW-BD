@@ -14,6 +14,7 @@
 
     
     <head> 
+        <script src="javascript.js" charset="utf-8"></script>
     <div class="w3-top">
       <div class="w3-row w3-padding w3-black">
         <div class="w3-col s3">
@@ -38,6 +39,8 @@
     </header>
     
     <body class="w3-light-grey">
+        
+        
     
         <img class="backg" src = "images/back.jpg"> 
         
@@ -45,12 +48,13 @@
         <article class="w3-col l8 s12">
             <div class="w3-container w3-white w3-margin w3-padding-large">
                 <div class="w3-center">
-                    <h2>Es invierno...</h2>
+                    <div class="w3-center">
+                      <h2>Preguntas a responder</h2>
+                      <h4>Laboratorio 4, <span class="w3-opacity">24 enero, 2018</span></h4>
+                    </div>
                 </div>
-                <div><center><img id ="gif" src = "images/animacion.gif"> </center></div>
+                <div><center><img src = "images/cinco.jpg"> </center></div>
                 <div class="w3-center">
-                  <h2>Preguntas a responder</h2>
-                  <h4>Laboratorio 4, <span class="w3-opacity">22 enero, 2018</span></h4>
                   <br><br>
                     <div class="w3-justify" style="font-size: 18px;">     
                         <p><strong><h3> Información </h3></strong> </p>
@@ -149,21 +153,52 @@
           </div>
         </aside>
         
-        <script>
-            function Estudiante(nombre){
-               this.nombre = nombre;   
-            }
-                
-            var nombre = prompt("Escribe tu nombre:");
-            var estudiante = new Estudiante(nombre);
-                        
-            Estudiante.prototype.abrigar = function(){
-                 alert('Hola, ¡bienvenido, '+nombre+'! Abrígate bien, hace frío')    
-            }
-                        
-            estudiante.abrigar();
-            
-        </script>
+        
+        <div class="centered">
+     <div class="ui input focus">
+       <input type="text" id="sentencia" name="sentencia" placeholder="Palabra">
+     </div>
+ 
+     <button class="ui inverted red button" type="button" name="button">Responder</button>
+   </div>
+ 
+ 
+   <div class="ui celled grid">
+     <div class="row">
+       <div class="three wide column">
+         <img>
+       </div>
+       <div class="thirteen wide column">
+         <button class="ui primary basic button" type="button" name="button1">1er Problema</button>
+         <button class="ui primary basic button" type="button" name="button2">2do Problema</button>
+         <button class="ui primary basic button" type="button" name="button3">3er Problema</button>
+         <button class="ui primary basic button" type="button" name="button4">4to Problema</button>
+         <button class="ui primary basic button" type="button" name="button5">5to Problema</button>
+       </div>
+     </div>
+     <div class="row">
+       <div class="seven wide column">
+         <h4>Contexto</h4>
+       </div>
+       <div class="six wide column">
+         <h4>Respuesta:</h4>
+       </div>
+     </div>
+     <div class="row">
+ 
+       <div class="seven wide column" id="problema">
+         <p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida </p>
+       </div>
+       <div class="six wide column" id="answer">
+ 
+       </div>
+     </div>
+   </div>
+ 
+        
+        
+        
+        
             
     </body>
     
@@ -172,14 +207,15 @@
         <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Arriba</a> 
         <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
         <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>
-        <p>Referencias </p>
+        <!--<p>Referencias </p>
             <p>[1] Alarcón, José Manuel, Consultado el 21 de enero del 2018 de: https://www.campusmvp.es/recursos/post/Java-y-JavaScript-son-lo-mismo.aspx</p>
             <p>[2] MDN, Consultado el 21 de enero del 2018 de: https://msdn.microsoft.com/es-es/library/cd9w2te4(v=vs.94).aspx</p>
             <p>[3] Microsoft, Consultado el 21 de enero del 2018 de: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/find</p>
             <p>[4] MDN, Consultado el 21 de enero del 2018 de: https://msdn.microsoft.com/es-es/library/bzt2dkta(v=vs.94).aspx</p>
             <p>[5] Libros Web, Consultado el 21 de enero del 2018 de: http://librosweb.es/libro/javascript/capitulo_4/ambito_de_las_variables.html</p>
             <p>[6] MDN, Consultado el 21 de enero del 2018 de: https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions</p>
-        
+        --> 
+
     </footer>
     
 
