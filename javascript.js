@@ -220,3 +220,52 @@ var button = document.querySelectorAll("button");
  
    }
  }
+
+
+
+document.querySelector("#r").classList.toggle('error');
+function validate(){
+  let xx = document.querySelector('#good');
+  let yy = document.querySelector('#bad');
+  if(xx.classList.contains('hidden'))
+      xx.classList.toggle('hidden');
+      if(yy.classList.contains('hidden'))
+          yy.classList.toggle('hidden');
+
+  var password = document.querySelector('#pass1');
+  var confirm = document.querySelector('#pass2');
+  if(password.value == confirm.value){
+    var x = document.querySelector("#bad")
+    x.classList.toggle('hidden');
+	obtain();
+  }
+  else {
+    var x = document.querySelector("#good")
+    x.classList.toggle('hidden');
+  }
+}
+
+var name ="";
+var email ="";
+var cel ="";
+var pass="";
+
+function obtain(){
+  name = document.querySelector('#name').value;
+  cel = document.querySelector('#tel').value;
+  email = document.querySelector('#email').value;
+  pass = document.querySelector('#pass1').value;
+
+  document.querySelector('#wn').textContent+=name;
+  document.querySelector('#wc').textContent+=cel;
+  document.querySelector('#we').textContent+=email;
+  document.querySelector('#wp').textContent+=pass;
+
+  $('.ui.basic.modal')
+  .modal('show')
+;
+document.querySelector('#name').value = "";
+document.querySelector('#tel').value = "";
+document.querySelector('#email').value = "";
+document.querySelector('#pass1').value = "";
+}
