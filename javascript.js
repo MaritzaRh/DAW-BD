@@ -269,3 +269,6 @@ document.querySelector('#tel').value = "";
 document.querySelector('#email').value = "";
 document.querySelector('#pass1').value = "";
 }
+
+
+

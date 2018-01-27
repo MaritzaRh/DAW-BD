@@ -72,155 +72,99 @@
             </div>   
         </article>
             
-        
-        <aside class="w3-col l4">
-          <div class="w3-white w3-margin">
-            <img src="images/M.jpeg" style="width:100%" class="w3-grayscale">
-            <div class="w3-container w3-black">
-              <h4>Acerca de mí</h4>
-              <p>Soy una estudiante del 5° semestre de Ingeniería en Sistemas Computacionales en el Tecnológico de 
-                  Monterrey Campus Querétaro. Soy una chica alegre que le gusta disfrutar de su tiempo libre con su pareja y familia.</p>
-            </div>
-          </div>
-        
+	   <h1> Registro</h1>
+	   <div class="ui success message hidden" id="good">
+	    	<i class="close icon"></i>
+		    <div class="header"> Registro exitoso. </div>
+			<p>Ahora puedes entrar con tu número de usuario.</p>
+	   </div>
 
-          <div class="w3-white w3-margin">
-                <div class="w3-container w3-padding w3-black">
-                  <h4>Posts populares</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-                  <li class="w3-padding-16">
-                    <img src="images/dos.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large"><a href="Definiciones.html">Definiciones</a></span>
-                    <br>
-                    <span>Aprende nuevos conceptos...</span>
-                  </li>
-                  <li class="w3-padding-16">
-                    <img src="images/tres.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                    <span class="w3-large"><a href="investigacion.html">Investigación</a></span>
-                    <br>
-                    <span>Ciclos de vida y desarrollo de Software.</span>
-                  </li>
-                </ul>
-          </div>
-        </aside>
-        
+	   <div class="ui error message hidden" id="bad">
+			<i class="close icon"></i>
+			<div class="header"> Error.
+	   </div>
+	   <ul class="list">
+		  <li>Debes incluir mayúsculas y minúsculas en la contraseña.</li>
+		  <li>Las contraseñas no coinciden.</li>
+	   </ul>
+	  </div>
+
+	  <div class="ui grid">
+		<div class="four wide column"></div>
+		<div class="eight wide column">
+			<div class="ui raised segment ">
+				<div class="centered">
+				  <form id="form" action="" method="post">
+					<p>Nombre</p>
+					<div class="fluid ui input focus" id ="cname">
+						<input type="text" id ="name" name="name" value="" placeholder="Name">
+					</div>
+					<br>
+					<p>Correo</p>
+					<div class="fluid ui input focus">
+						<input type="email" id ="email" name="email" value="" placeholder="E-mail">
+					</div>
+					<br>
+					<p>Teléfono</p>
+					<div class="fluid ui input focus">
+						<input type="tel" id ="tel" name="tel" value="" placeholder="Telefono">
+					</div>
+					<br><br>
+					<div class="ui grid">
+						<div class="eight wide column">
+							<p>Contraseña</p>
+						</div>
+						<div class="eight wide column">
+							<p>Repite contraseña</p>
+						</div>
+					</div>
+					<div class="fluid ui input focus error" id="r">
+				  		<input type="password" id ="pass1" name="" value="" placeholder="Password">
+						<input type="password" id="pass2" name="" value="" placeholder="Repeat password">
+					</div>
+					<br><br>
+					<button class="fluid ui primary button" id="sub" type="button" name="button" onclick="validate()">Submit</button>
+
+				  </form>
+				</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="ui basic modal">
+		<div class="ui icon header">
+		  <i class="archive icon"></i>
+		  Registro exitoso 
+		</div>
+		<div class="content party">
+		  <h2>Fuiste registrado como: </h2>
+		  <div id="out">
+			<h4>Nombre:  " <strong><span id="wn"></span> </strong>"</h4>
+			<p>Correo:  " <span id="we"></span> "</p>
+			<p>Teléfono:  " <span id="wc"></span> "</p>
+			<hp>Contraseña:  "<span id="wp"></span> "</p>
+		  </div>
+
+		</div>
+		<div class="actions">
+		  <div class="ui red basic cancel inverted button">
+			<i class="remove icon"></i>
+			No
+		  </div>
+		  <div class="ui green ok inverted button">
+			<i class="checkmark icon"></i>
+			Sí
+		  </div>
+		</div>
+	  </div>
 		
-		<div class="ui inverted menu">
-    <a class="item">Browse</a>
-    <a class="item">Store</a>
-    <div class="right menu">
-      <a class="item">Sign Up</a>
-      <a class="item">Help</a>
-    </div>
-  </div>
-  <h1>Registration</h1>
-  <div class="ui success message hidden" id="good">
-    <i class="close icon"></i>
-    <div class="header">
-      Your user registration was successful.
-    </div>
-    <p>You may now log-in with the username you have chosen</p>
-  </div>
-
-  <div class="ui error message hidden" id="bad">
-    <i class="close icon"></i>
-    <div class="header">
-      There were some errors with your submission
-    </div>
-    <ul class="list">
-      <li>You must include both a upper and lower case letters in your password.</li>
-      <li>The paswords do not match.</li>
-    </ul>
-  </div>
-
-  <div class="ui grid">
-    <div class="four wide column">
-
-    </div>
-    <div class="eight wide column">
-
-        <div class="ui raised segment ">
-            <div class="centered">
-              <form id="form" action="" method="post">
-                <p>Name</p>
-                <div class="fluid ui input focus" id ="cname">
-            <input type="text" id ="name" name="name" value="" placeholder="Name">
-            </div>
-            <br>
-            <p>Email</p>
-                <div class="fluid ui input focus">
-            <input type="email" id ="email" name="email" value="" placeholder="E-mail">
-            </div>
-            <br>
-            <p>Phone</p>
-            <div class="fluid ui input focus">
-        <input type="tel" id ="tel" name="tel" value="" placeholder="Telefono">
-        </div>
-            <br><br>
-            <div class="ui grid">
-              <div class="eight wide column">
-                <p>Password</p>
-              </div>
-              <div class="eight wide column">
-                <p>Repeat Password</p>
-              </div>
-            </div>
-            <div class="fluid ui input focus error" id="r">
-              <input type="password" id ="pass1" name="" value="" placeholder="Password">
-              <input type="password" id="pass2" name="" value="" placeholder="Repeat password">
-            </div>
-            <br><br>
-            <button class="fluid ui primary button" id="sub" type="button" name="button" onclick="validate()">Submit</button>
-
-
-
-
-              </form>
-
-            </div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-  <div class="ui basic modal">
-    <div class="ui icon header">
-      <i class="archive icon"></i>
-      Registration Sucessfull
-    </div>
-    <div class="content party">
-      <h2>You have been registered as: </h2>
-      <div id="out">
-        <h4>Name:  " <strong><span id="wn"></span> </strong>"</h4>
-        <p>Email:  " <span id="we"></span> "</p>
-        <p>Celphone:  " <span id="wc"></span> "</p>
-        <hp>Password:  "<span id="wp"></span> "</p>
-      </div>
-
-    </div>
-    <div class="actions">
-      <div class="ui red basic cancel inverted button">
-        <i class="remove icon"></i>
-        No
-      </div>
-      <div class="ui green ok inverted button">
-        <i class="checkmark icon"></i>
-        Yes
-      </div>
-    </div>
-  </div>
-		
-		
+		<br><br><br><br><br><br><br><br><br><br><br>
     </body>
     
     <footer>
        <!-- <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Arriba</a>--> 
         <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
-        <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>
+        <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p><br>
     </footer>
 
 </html>
