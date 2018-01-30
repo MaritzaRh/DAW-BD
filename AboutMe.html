@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <link rel="stylesheet" href="miestilo.css">
+	   <title> Labs</title>
+	   <meta charset="UTF-8">
+	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    </head>
+
+    <body>
+        
+        <section>
+            <h1>About me!</h1>
+            <hr>
+
+            
+            <p>Esta página te reta a adivinar un poco sobre mí...</p>
+
+            <form id="formulario" method="POST" onsubmit="return adivina(this)">
+                <p>
+                    <label>¿Cuál es mi nombre?<br>
+                        <input type="text" id="name" required="required" placeholder="Nombre" maxlength="25">
+                    </label>
+                </p>
+                <p>
+                    <label>¿Cuántos años tengo?<br>
+                        <input type="number" id="age" required="required" placeholder="Edad" min="0" max="40" step="1">
+                    </label>
+                </p>
+                <p>
+                    <label>¿Qué día nací?<br>
+                        <input type="date" id="birthday" min="1990-01-01" max="2017-12-31" step="1">
+                    </label>
+                </p>    
+                <p>
+                    <input type="submit" value="Enviar"/>
+                </p>
+            </form>
+        </section>
+  	</body>
+    <footer>
+        <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
+        <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>
+		<br>
+    </footer>
+    
+</html>
