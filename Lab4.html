@@ -1,39 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="miestilo.css">
-    <title> Labs</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
-   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
-   <link rel="stylesheet" type="text/css" href="styles/styles.min.css">
-
     
     <head> 
-    
-    <div class="w3-top">
-      <div class="w3-row w3-padding w3-black">
-        <div class="w3-col s3">
-          <a href="Lab1.html" class="w3-button w3-block w3-black">Lab1 y Lab3</a>
-        </div>
-        <div class="w3-col s3">
-          <a href="Lab4.html" class="w3-button w3-block w3-black">Lab4</a>
-        </div>
-        <div class="w3-col s3">
-          <a href="Lab5.html" class="w3-button w3-block w3-black">Lab5</a>
-        </div>
-        <div class="w3-col s3">
-          <a href="" class="w3-button w3-block w3-black">Lab6</a>
-        </div>
-      </div>
-    </div>
+	   <link rel="stylesheet" href="miestilo.css">
+	   <title> Labs</title>
+	   <meta charset="UTF-8">
+	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
     </head>
     
     <header class="w3-container w3-center w3-padding-48 w3-white">
@@ -42,7 +17,22 @@
     </header>
     
     <body class="w3-light-grey">
-		<script src="javascript.js" charset="utf-8"></script>
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-black">
+			<div class="w3-col s3">
+			  <a href="Lab1.html" class="w3-button w3-block w3-black">Lab1 y Lab3</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab4.html" class="w3-button w3-block w3-black">Lab4</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab5.html" class="w3-button w3-block w3-black">Lab5</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="" class="w3-button w3-block w3-black">Lab6</a>
+			</div>
+		  </div>
+		</div>
 		
         <img class="backg" src = "images/back.jpg"> 
         
@@ -121,17 +111,8 @@
                 </div> 
             </div>   
         </article>
-        
-        <aside class="w3-col l4">
-          <div class="w3-white w3-margin">
-            <img src="images/M.jpeg" style="width:100%" class="w3-grayscale">
-            <div class="w3-container w3-black">
-              <h4>Acerca de mí</h4>
-              <p>Soy una estudiante del 5° semestre de Ingeniería en Sistemas Computacionales en el Tecnológico de 
-                  Monterrey Campus Querétaro. Soy una chica alegre que le gusta disfrutar de su tiempo libre con su pareja y familia.</p>
-            </div>
-          </div>
-        
+		
+		<aside class="w3-col l4">        
 
           <div class="w3-white w3-margin">
                 <div class="w3-container w3-padding w3-black">
@@ -153,45 +134,39 @@
                 </ul>
           </div>
         </aside>
-        
-        
-   
- 
- 
-   <div class="ui celled grid">
-     <div class="row">
-       <div class="thirteen wide column">
-         <button class="ui primary basic button" type="button" name="button1">1er Problema</button>
-         <button class="ui primary basic button" type="button" name="button2">2do Problema</button>
-         <button class="ui primary basic button" type="button" name="button3">3er Problema</button>
-         <button class="ui primary basic button" type="button" name="button4">4to Problema</button>
-         <button class="ui primary basic button" type="button" name="button5">5to Problema</button>
-       </div>
-     </div>
-     <div class="row">
-       <div class="seven wide column">
-         <h4>Contexto</h4>
-       </div>
-       <div class="six wide column">
-         <h4>Respuesta:</h4>
-       </div>
-     </div>
-     <div class="row">
- 
-       <div class="seven wide column" id="problema">
-         <p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida </p>
-       </div>
-       <div class="six wide column" id="answer">
-		   <div class="centered">
-			 <div class="ui input focus">
-			   <input type="text" id="sentencia" name="sentencia" placeholder="Palabra">
-			 </div>
-			 <button class="ui inverted red button" type="button" name="button">Responder</button>
-		   </div>
-	   </div>
-     </div>
-   </div>
-            
+ 	<div class="ui celled grid">
+		<div class="row">
+		  <div class="three wide column">
+			<img>
+		  </div>
+		  <div class="thirteen wide column">
+			<button class="ui primary basic button" type="button" name="button1">1er Problema</button>
+			<button class="ui primary basic button" type="button" name="button2">2do Problema</button>
+			<button class="ui primary basic button" type="button" name="button3">3er Problema</button>
+			<button class="ui primary basic button" type="button" name="button4">4to Problema</button>
+			<button class="ui primary basic button" type="button" name="button5">5to Problema</button>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="seven wide column">
+			<h4>Contexto</h4>
+		  </div>
+		  <div class="six wide column">
+			<h4>Respuesta:</h4>
+		  </div>
+		</div>
+		<div class="row">
+
+		  <div class="seven wide column" id="problema">
+			<p>Entrada: un número pedido con un prompt. Salida: Una tabla con los números del 1 al número dado con sus cuadrados y cubos. Utiliza document.write para producir la salida </p>
+		  </div>
+		  <div class="six wide column" id="answer">
+
+      	</div>
+    	</div>
+  	</div>
+	<script src="javascript.js" charset="utf-8"></script>
+	   
     </body>
     
     <footer>

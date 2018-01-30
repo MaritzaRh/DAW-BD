@@ -52,7 +52,7 @@
             <div class="w3-container w3-white w3-margin w3-padding-large">
                 <div class="w3-center">
                   <h2>Preguntas a responder</h2>
-                  <h4>Laboratorio 5, <span class="w3-opacity">25 enero, 2018</span></h4>
+                  <h4>Laboratorio 1, <span class="w3-opacity">25 enero, 2018</span></h4>
                 </div>
                 
                 <div class="w3-justify" style="font-size: 18px;">
@@ -66,98 +66,53 @@
                         <li> ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript? </li> <p>Alterando el html form con "novalidate" o evitando que se haga el request, en otro caso eliminando el js.</p>
                         
                         <li> Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</li> <p>Ya que posteriromente se puede proteger tu html y js para evitar esas practicas, ademas la infrmacion no se enviara hasta el servidor a menos que se haga el request o este validado entonces no causari problema alguno.</p>
+						
+						<li>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</li><p>No debería de ser utilizado de manera frecuente ya que es considerada una mala practica sin embargo en caso de ser necesario es conveniente utilizarlo</p>
+						
+                        <li>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</li><p> Ya que se puede perder el contenido de la pagina por causa del color de la imagen o si esta no es del tamaño completo de la pantalla se subdivide y puede causar un efecto no deseado</p>
+						
+                        <li>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt? </li><p> Dependiendo de lo que busques hacer y que atributo uses, pero preferentemente yo recomiendo el uso de px para fuentes y padding mientras que % solo para medidas en cuanto a objetos responsivos</p>
+						
+						<li>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</li><p> Ya que evita que le navejador ande leyendo comentarios y espacios optimizando de esta manera la velocidad de carga de la pagina web</p>
                     </ul>
                  
                 </div>
             </div>   
         </article>
-            
-	   <h1> Registro</h1>
-	   <div class="ui success message hidden" id="good">
-	    	<i class="close icon"></i>
-		    <div class="header"> Registro exitoso. </div>
-			<p>Ahora puedes entrar con tu número de usuario.</p>
-	   </div>
-
-	   <div class="ui error message hidden" id="bad">
-			<i class="close icon"></i>
-			<div class="header"> Error.
-	   </div>
-	   <ul class="list">
-		  <li>Debes incluir mayúsculas y minúsculas en la contraseña.</li>
-		  <li>Las contraseñas no coinciden.</li>
-	   </ul>
-	  </div>
-
-	  <div class="ui grid">
-		<div class="four wide column"></div>
-		<div class="eight wide column">
-			<div class="ui raised segment ">
-				<div class="centered">
-				  <form id="form" action="" method="post">
-					<p>Nombre</p>
-					<div class="fluid ui input focus" id ="cname">
-						<input type="text" id ="name" name="name" value="" placeholder="Name">
-					</div>
-					<br>
-					<p>Correo</p>
-					<div class="fluid ui input focus">
-						<input type="email" id ="email" name="email" value="" placeholder="E-mail">
-					</div>
-					<br>
-					<p>Teléfono</p>
-					<div class="fluid ui input focus">
-						<input type="tel" id ="tel" name="tel" value="" placeholder="Telefono">
-					</div>
-					<br><br>
-					<div class="ui grid">
-						<div class="eight wide column">
-							<p>Contraseña</p>
-						</div>
-						<div class="eight wide column">
-							<p>Repite contraseña</p>
-						</div>
-					</div>
-					<div class="fluid ui input focus error" id="r">
-				  		<input type="password" id ="pass1" name="" value="" placeholder="Password">
-						<input type="password" id="pass2" name="" value="" placeholder="Repeat password">
-					</div>
-					<br><br>
-					<button class="fluid ui primary button" id="sub" type="button" name="button" onclick="validate()">Submit</button>
-
-				  </form>
-				</div>
-		  </div>
-		</div>
-	  </div>
-
-	  <div class="ui basic modal">
-		<div class="ui icon header">
-		  <i class="archive icon"></i>
-		  Registro exitoso 
-		</div>
-		<div class="content party">
-		  <h2>Fuiste registrado como: </h2>
-		  <div id="out">
-			<h4>Nombre:  " <strong><span id="wn"></span> </strong>"</h4>
-			<p>Correo:  " <span id="we"></span> "</p>
-			<p>Teléfono:  " <span id="wc"></span> "</p>
-			<hp>Contraseña:  "<span id="wp"></span> "</p>
-		  </div>
-
-		</div>
-		<div class="actions">
-		  <div class="ui red basic cancel inverted button">
-			<i class="remove icon"></i>
-			No
-		  </div>
-		  <div class="ui green ok inverted button">
-			<i class="checkmark icon"></i>
-			Sí
-		  </div>
-		</div>
-	  </div>
 		
+		<aside class="w3-col l4">
+          <div class="w3-white w3-margin">
+            <img src="images/M.jpeg" style="width:100%" class="w3-grayscale">
+            <div class="w3-container w3-black">
+              <h4>Acerca de mí</h4>
+              <p>Soy una estudiante del 5° semestre de Ingeniería en Sistemas Computacionales en el Tecnológico de 
+                  Monterrey Campus Querétaro. Soy una chica alegre que le gusta disfrutar de su tiempo libre con su pareja y familia.</p>
+            </div>
+          </div>
+        
+
+          <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                  <h4>Posts populares</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="Definiciones.html">Lab1 y 3</a></span>
+                    <br>
+                    <span>Aprende nuevos conceptos...</span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="Questionario.html">Questionario BD</a></span>
+                    <br>
+                    <span>Lo que no sabías...</span>
+                  </li>
+                </ul>
+          </div>
+        </aside>
+            
+	  
 		<br><br><br><br><br><br><br><br><br><br><br>
     </body>
     
