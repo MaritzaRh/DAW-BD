@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-       <link rel="stylesheet" href="miestilo.css">
+<html>
+    
+    <head> 
+	   <link rel="stylesheet" href="miestilo.css">
 	   <title> Labs</title>
 	   <meta charset="UTF-8">
 	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,38 +10,45 @@
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
     </head>
-
-    <body>
-        
-        <section>
-            <h1>About me!</h1>
-            <hr>
-
-            
-            <p>Esta página te reta a adivinar un poco sobre mí...</p>
-
-            <form id="formulario" method="POST" onsubmit="return adivina(this)">
-                <p>
-                    <label>¿Cuál es mi nombre?<br>
-                        <input type="text" id="name" required="required" placeholder="Nombre" maxlength="25">
-                    </label>
-                </p>
-                <p>
-                    <label>¿Cuántos años tengo?<br>
-                        <input type="number" id="age" required="required" placeholder="Edad" min="0" max="40" step="1">
-                    </label>
-                </p>
-                <p>
-                    <label>¿Qué día nací?<br>
-                        <input type="date" id="birthday" min="1990-01-01" max="2017-12-31" step="1">
-                    </label>
-                </p>    
-                <p>
-                    <input type="submit" value="Enviar"/>
-                </p>
-            </form>
-        </section>
+    
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Maritza Rosales</b></h1>
+        <h6>Bienvenido a <span class="w3-tag">ABOUT ME</span></h6>
+    </header>
+    
+    <body class="w3-light-grey">
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-black">
+			<div class="w3-col s3">
+			  <a href="Lab1.html" class="w3-button w3-block w3-black">Lab1 y Lab3</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab4.html" class="w3-button w3-block w3-black">Lab4</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab5.html" class="w3-button w3-block w3-black">Lab5</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab6.html" class="w3-button w3-block w3-black">Lab6</a>
+			</div>
+		  </div>
+		</div>	
+			
+		<div class="w3-container w3-padding-64" >
+			
+			<h1>¡Adivina todo sobre mí!</h1>
+			<p class="w3-text-blue-grey w3-large"> <b> y te daré un chocolate...</b></p><br><br>
+			
+			<form id="formulario">
+			  <p><input id="name" class="w3-input w3-padding-16" type="text" placeholder="Nombre" required></p>
+			  <p><input id="age" class="w3-input w3-padding-16" type="number" placeholder="Edad" required></p>
+			  <p><input id="birthday" type="date" class="w3-input w3-padding-16" placeholder="Fecha de nacimiento"></p>
+			  <p><button class="fluid ui primary button" id="sub" type="button" name="button" onclick="adivina()">Submit</button></p>
+			</form>
+	  	</div>
+		<script src="javascriptL5.js" charset="utf-8"></script>
   	</body>
+	
     <footer>
         <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
         <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>

@@ -6,14 +6,14 @@
 	   <title> Labs</title>
 	   <meta charset="UTF-8">
 	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     
     <header class="w3-container w3-center w3-padding-48 w3-white">
         <h1 class="w3-xxxlarge"><b>Maritza Rosales</b></h1>
-        <h6>Bienvenido a <span class="w3-tag">JAVASCRIPT</span></h6>
+        <h6>Compra ropa de <span class="w3-tag">BALLET</span></h6>
     </header>
     
     <body class="w3-light-grey">
@@ -37,51 +37,134 @@
 		  </div>
 		</div>
 		
-        <section>
-            <h2>Compra de ropa de ballet</h2>
-            <hr>
+        <table >
 
-            <div class="cuadro">
-                <img src="images/mod1.jpg">
-                    <p><strong>Zapatillas de ballet</strong></p>
-                    <p><strong>Precio:</strong> $999 MXN</p>
-            </div>
-
-            <div class="cuadro"> 
-                <img src="images/mod2.png">
-                    <p><strong>Leotardo negro</strong></p>
-                    <p><strong>Precio:</strong> $1,299 MXN</p>
-            </div>
-
-            <div class="cuadro">
-                <img src="images/mod3.jpg">
-                    <p><strong>Vestido para ballet</strong></p>
-                    <p><strong>Precio:</strong> $1,999 MXN</p>
-			</div>
-			<table class ="compras">
-				<tr>
-					<td><p><strong>Cantidad:</strong></p><input type="number" id="zap" value="0" min="0" max="5" step="1"></td>
-					<td><p><strong>Cantidad:</strong></p><input	 type="number" id="leo" value="0" min="0" max="5" step="1"></td>
-					<td><p><strong>Cantidad:</strong></p><input type="number" id="ves" value="0" min="0" max="5" step="1"></td>
-				</tr>
-			</table>
+            <tr>
+                <td><br><br><img src="images/mod1.jpg"></td>
+                <td><br><br><img src="images/mod2.jpg"></td>
+				<td><br><br><img src="images/mod3.jpg"></td>
+            </tr>
 			
-			<table class = "btcompras">
-				<tr>
-					<td><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#quees" onclick="comprar()">Comprar</button></td>
-					<td><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#quees" onclick="comprar()">Comprar</button></td>
-					<td><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#quees" onclick="comprar()">Comprar</button></td>
-				</tr>
-			</table>
+            <tr>             
+				<td><br><br><strong>Zapatillas de ballet</strong></td>
+				<td><br><br><strong>Leotardo negro</strong></td>
+                <td><br><br><strong>Vestido para ballet</strong></td>
+			</tr>
+			<tr>
+                <td>Precio: $999 MXN</td>
+                <td>Precio: $1,299 MXN</td>
+                <td>Precio: $1,999 MXN</td>
+            </tr>
+
+			<tr>
+				<td><br><br><strong>Cantidad:</strong><input type="number" id="zap" value="0" step="1"></td>
+				<td><br><br><strong>Cantidad:</strong><input	 type="number" id="leo" value="0" step="1"></td>
+				<td><br><br><strong>Cantidad:</strong><input type="number" id="ves" value="0" step="1"></td>
+			</tr>
+			
+			<tr>
+				<td><br><button onclick="comprar()" class="btn btn-info">Agregar</button></td>
+				<td><br><button onclick="comprar()" class="btn btn-info">Agregar</button></td>
+				<td><br><button onclick="comprar()" class="btn btn-info">Agregar</button></td>
+			</tr>
+		</table>
+        
+        <br>
+        <section class="w3-container w3-padding-64">            
+            <div id="cuenta"> <h1>TOTAL: </h1></div>
         </section>
-        <br><br><br>
-        <section>
-            <h2>CUENTA TOTAL</h2>
-            <hr>
-            <div id="cuenta"></div>
-        </section>
+			
+			
+		  <div class="w3-container w3-padding-64">
+			  <h1>Regístrate</h1> <p class="w3-text-blue-grey w3-large"> <b> y recibe cupones para comprar en tiendas de ropa.</b></p><br><br>
+		  </div>
+	    
+		  <div class="ui success message hidden" id="good">
+			<i class="close icon"></i>
+			<div class="header"> Registro existoso.</div>
+			<p>Puedes entrar con tu nombre de usuario ahora.</p>
+		  </div>
+
+		  <div class="ui error message hidden" id="bad">
+			<i class="close icon"></i>
+			<div class="header"> Hay errores. </div>
+			<ul class="list">
+			  <li>Usa mayúsculas y minúsculas.</li>
+			  <li>Las contraseñas no coinciden.</li>
+			</ul>
+		  </div>
+
+		  <div class="ui grid">
+			<div class="four wide column">
+
+			</div>
+			<div class="eight wide column">
+
+				<div class="ui raised segment ">
+					<div class="centered">
+					  <form id="form" action="" method="post">
+						<p>Nombre</p>
+						<div class="fluid ui input focus" id ="cname">
+					<input type="text" id ="name" name="name" value="" placeholder="Nombre">
+					</div>
+					<br>
+					<p>Correo</p>
+						<div class="fluid ui input focus">
+					<input type="email" id ="email" name="email" value="" placeholder="correo@ejemplo.com">
+					</div>
+					<br>
+					<p>Teléfono</p>
+					<div class="fluid ui input focus">
+				<input type="tel" id ="tel" name="tel" value="" placeholder="01 800 teléfono">
+				</div>
+					<br><br>
+					<div class="ui grid">
+					  <div class="eight wide column">
+						<p>Contraseña</p>
+					  </div>
+					  <div class="eight wide column">
+						<p>Repite contraseña</p>
+					  </div>
+					</div>
+					<div class="fluid ui input focus error" id="r">
+					  <input type="password" id ="pass1" name="" value="" placeholder="Password">
+					  <input type="password" id="pass2" name="" value="" placeholder="Repeat password">
+					</div>
+					<br><br>
+					<button class="fluid ui primary button" id="sub" type="button" name="button" onclick="validate()">Submit</button>
+					  </form>
+					</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="ui basic modal">
+			<div class="ui icon header">
+			  <i class="archive icon"></i>
+			  Registro exitoso.
+			</div>
+			<div class="content party">
+			  <h2>Te registraste como: </h2>
+			  <div id="out">
+				<h4>Nombre: " <strong><span id="wn"></span> </strong>"</h4>
+				<p>Correo: " <span id="we"></span> "</p>
+				<p>Teléfono:  " <span id="wc"></span> "</p>
+				<p>Contraseña:  "<span id="wp"></span> "</p>
+			  </div>
+
+			</div>
+			<div class="actions">
+			  <div class="ui red basic cancel inverted button">
+				<i class="remove icon"></i>
+				No
+			  </div>
+			  <div class="ui green ok inverted button">
+				<i class="checkmark icon"></i>
+				Sí
+			  </div>
+			</div>
+		  </div>
 		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             
     </body>
     
