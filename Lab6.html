@@ -48,17 +48,23 @@
                 <div class="w3-center">
                   <br><br>
                     <div class="w3-justify" style="font-size: 18px;">     
-                        <p><strong><h3> Información </h3></strong> </p>
+                        <p><strong><h3> Preguntas a responder </h3></strong> </p>
                         <br>
                         <ul> 
 
-                            <li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</li> <p>Igual que en de manera global, como "var equis = 12;" sin importar el tipo de variable que sea porque podríamos usar "var" para todos los casos[4].</p>
+                            <li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</li> <br>
+							<p><strong>static: </strong>Es el valor por default. Los elementos se posicionan conforme al flujo normal del documento.</p>
+							<p><strong>relative: </strong>Los elementos se posicionan de manera relativa a su posición normal.</p> 
+							<p><strong>fixed: </strong>Los elementos se posicionan de manera relativa a la ventana del navegador, es decir, siempre se mantienen en el mismo lugar.</p>
+                        	<p><strong>absolute: </strong>Los elementos se posicionan de manera relativa a la posición del elemento antecesor más cercano.</p>
 
-                            <li>¿Cuáles son los valores estándar para la propiedad visibility? </li><p>Que se cree una variable local por lo que no se tomará en cuenta si existe una variable global en una función[5]. </p>
-
-                            <li>¿Qué es el zIndex y para qué sirve?</li> <p>Los métodos exec, match o replace. Y se podrían utilizar para poder buscar la coincidencia de cadenas como en las contraseñas de usuarios [6].</p>
-
-                            
+                            <li>¿Cuáles son los valores estándar para la propiedad visibility? </li><br>
+							<p><strong>visible: </strong>Es el valor por default. El elemento está visible.</p>
+							<p><strong>hidden: </strong>El elemento es invisible, pero sigue ocupando su espacio.</p>
+							<p><strong>collapse: </strong>Sólo para elementos de una tabla. Remueve una fila o columna, sin afectar el diseño de la tabla. El espacio que queda después de remover la fila o columna, queda disponible para otro contenido.</p>
+							
+                            <input class="fluid ui primary button"  type="button" value="Ver más" onclick="mostrar()">
+							<div id='oculto' style='display:none;'><li>¿Qué es el zIndex y para qué sirve?</li> <p>Es una propiedad que especifica el orden de un elemento dentro de un stack. Los elementos con un zIndex mayor, se colocan siempre en frente de aquellos con un zIndex menor.</p></div>
                         </ul>
                     </div>
                 </div> 
@@ -73,10 +79,27 @@
                 </div>
                 <ul class="w3-ul w3-hoverable w3-white">
                   <li class="w3-padding-16">
-                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <img src="images/adivinanza.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
                     <span class="w3-large">¿Quién es algo y nada a la vez?</span>
 					  <p id="uno" onmousedown=" adivinanza()">Click me!</p>
                     <br>
+                  </li>
+                </ul>
+          </div>
+			
+		  <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                  <h4>RETO...</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <div class="w3-large">¿De qué color es?</div><br>
+					<img src="images/vestido.jpg" id="drag1" ondragstart="drag(event)" draggable="true" width= "50px" height="50px">
+				    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">AZUL</div>
+					<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">BLANCO</div>
+					
+                    <br><br><br><br><br>
                   </li>
                 </ul>
           </div>
@@ -84,18 +107,13 @@
 		
 		<script src="javascriptL5.js" charset="utf-8"></script>
  	
-	   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </body>
     
     <footer>
         <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
         <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p>
-        <!--<p>Referencias </p>
-            <p>[1] </p>
-            <p>[2] </p>
-            <p>[3] </p>
-        --> 
+        
 		<br>
     </footer>
 

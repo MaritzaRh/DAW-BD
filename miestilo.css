@@ -1,1 +1,12 @@
-.backg,.ciclo{position:static}td,th{padding:8px;border:0 solid #000}table,td,th,tr{border:0 solid #000 width:100%}.backg{width:100%;height:80%}nav{list-style-type:none;margin:0;padding:0}body,h1,h2,h3,h4,h5,h6{font-family:Oswald;font-size:355px}li{color:#5f9ea0}.ciclo{height:400px;width:500px;margin-left:120px}th{background-color:#f2f2f2;font-style:normal;align-content:center}td{text-align:justify}footer{text-align:center;margin-top:15em;bottom:1em}input,textarea{width:100%;padding:5px;box-sizing:border-box;border:1px solid #fff}.cuadro{background-color:#000;width:33.15%;position:relative;display:inline-block;padding-right:15px;padding-left:15px}.btcompras,.compras{width:99.9%;position:relative;border: 0; align-content: center;}
+.backg,.ciclo{position:static}td,th{padding:8px;border:0 solid #000}table,td,th,tr{border:0 solid #000 width:100%}.backg{width:100%;height:80%}nav{list-style-type:none;margin:0;padding:0}body,h1,h2,h3,h4,h5,h6{font-family:Oswald;font-size:355px}li{color:#5f9ea0}.ciclo{height:400px;width:500px;margin-left:120px}th{background-color:#f2f2f2;font-style:normal;align-content:center}td{text-align:justify}footer{text-align:center;margin-top:15em;bottom:1em}input,textarea{width:100%;padding:5px;box-sizing:border-box;border:1px solid #fff}.cuadro{background-color:#000;width:33.15%;position:relative;display:inline-block;padding-right:15px;padding-left:15px}.btcompras,.compras{width:99.9%;position:relative;border: 0; align-content: center;}body:after{content:"No copiar";font-size:2em;color:#a9a9a9;z-index:9999;display:flex;align-items:center;justify-content:center;position:fixed;top:0;right:0;bottom:0;left:0;-webkit-pointer-events:none;-moz-pointer-events:none;-ms-pointer-events:none;-o-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}
+#div1, #div2 {
+	text-align: center;
+	align-items:center;
+	justify-content:center;
+    float: left;
+    width: 100px;
+    height: 95px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}

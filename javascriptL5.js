@@ -83,6 +83,7 @@ function adivina() {
 function adivinanza(){
 	document.getElementById("uno").addEventListener("mousedown", mouseDown);
 	document.getElementById("uno").addEventListener("mouseup", mouseUp);
+	document.getElementById("uno").style.color= "#d32e12";
 
 	function mouseDown() {
 		document.getElementById("uno").innerHTML = "El pez";
@@ -91,4 +92,20 @@ function adivinanza(){
 	function mouseUp() {
 		document.getElementById("uno").innerHTML = "Pista";
 	}
+}
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+function mostrar(){
+document.getElementById('oculto').style.display = 'block';
 }
