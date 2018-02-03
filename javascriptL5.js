@@ -109,3 +109,12 @@ function drop(ev) {
 function mostrar(){
 document.getElementById('oculto').style.display = 'block';
 }
+function tiempo (){
+	var temps;
+	temps = setTimeout(function(){ 
+		alert("Bienvenido al lab6"); 
+	}, 2000);
+}
+function tiempodet (){
+	setInterval(function(){ alert("Te estoy viendo"); }, 5000);
+}
