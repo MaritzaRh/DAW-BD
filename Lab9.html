@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    
+    <head> 
+	   <link rel="stylesheet" href="miestilo.css">
+	   <title> Labs</title>
+	   <meta charset="UTF-8">
+	   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	   <link rel=stylesheet type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    </head>
+    
+    <header class="w3-container w3-center w3-padding-48 w3-white">
+        <h1 class="w3-xxxlarge"><b>Maritza Rosales</b></h1>
+        <h6>Bienvenido a <span class="w3-tag">Laboratorio 9</span></h6>
+    </header>
+    
+    <body class="w3-light-grey">
+		<div class="w3-top">
+		  <div class="w3-row w3-padding w3-black">
+			<div class="w3-col s3">
+			  <a href="Lab4.html" class="w3-button w3-block w3-black">Lab4</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab5.html" class="w3-button w3-block w3-black">Lab5</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab6.html" class="w3-button w3-block w3-black">Lab6</a>
+			</div>
+			<div class="w3-col s3">
+			  <a href="Lab9.html" class="w3-button w3-block w3-black">Lab9</a>
+			</div>
+		  </div>
+		</div>
+		
+        <img class="backg" src = "images/back.jpg"> 
+        
+        <article class="w3-col l8 s12">
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+                <div class="w3-center">
+                    <div class="w3-center">
+                      <h2>Preguntas a responder</h2>
+                      <h4>Laboratorio 9, <span class="w3-opacity">08 febrero, 2018</span></h4>
+                    </div>
+                </div>
+                <div><center><img src = "images/cinco.jpg"> </center></div>
+                <div class="w3-center">
+                  <br><br>
+                    <div class="w3-justify" style="font-size: 18px;">     
+                        <p><strong><h3> Información </h3></strong> </p>
+                        <br>
+                        <ul> 
+                            <li> ¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</li><p>Te da informacion acerca de la configuracion de php, le puedes poner parametros si buscas algo especifico o simplemente dejarlo en blanco para que te de toda la informacion. Me llama la atencion todo lo que se puede saber con ese comando por ejemplo las variables predefinidas o tambien la informacion de la licencia y el ambiente con la funcion INFO_ENVIRONMENT o el numero 16. </p>
+
+                            <li>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</li> <p>Tendrías que aumentar la seguridad para que no puedan ver la informacion del servidor y asi reducir el riesgo de que sea modificada por algun extraño.</p>
+
+                            <li>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</li><p>Porque php es la parte que realiza las operaciones logicas de la pagina, por lo que es enviada al servidor y lo que le refleja al usuario son los resultados por medio de html.</p>
+                        </ul>
+                    </div>
+                </div> 
+            </div>   
+        </article>
+        
+       <aside class="w3-col l4">        
+
+          <div class="w3-white w3-margin">
+                <div class="w3-container w3-padding w3-black">
+                  <h4>Anuncios</h4>
+                </div>
+                <ul class="w3-ul w3-hoverable w3-white">
+                  <li class="w3-padding-16">
+                    <img src="images/uno.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="Definiciones.html">Lab1 y 3</a></span>
+                    <br>
+                    <span>Aprende nuevos conceptos...</span>
+                  </li>
+                  <li class="w3-padding-16">
+                    <img src="images/M.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                    <span class="w3-large"><a href="AboutMe.html">About me!</a></span>
+                    <br>
+                    <span>¿Cuánto me conoces?</span>
+                  </li>
+                </ul>
+          </div>
+        </aside>
+		
+		<div class="ui celled grid">
+		<div class="row">
+		  <div class="seven wide column">
+			<h4>Contexto</h4>
+		  </div>
+		  <div class="six wide column">
+			<h4>Respuesta:</h4>
+		  </div>
+		</div>
+			
+		<div class="row">
+		  <div class="seven wide column" id="problema">
+			  <p>Una función que reciba un arreglo de números y devuelva su promedio </p>
+			  <p> Datos: Arreglo1=[4,10,2,7,8,9] y Arreglo2=[7,8,6,5,2,1]</p>
+		  </div>
+		  <div class="six wide column" id="answer"> 
+			  <?php
+				echo "R= Promedio: ".promedios([4,10,2,7,8,9])."<br />";
+				echo "R= Promedio: ".promedios([7,8,6,5,2,1])."<br />";
+			  ?>
+			</div>	
+    	</div>
+	    <div class="row">
+		  <div class="seven wide column" id="problema">
+			  <p>Una función que reciba un arreglo de números y devuelva su mediana</p>
+			  <p> Datos: Arreglo1=[4,10,2,7,8,9] y Arreglo2=[7,8,6,5,2,1]</p>
+		  </div>
+		  <div class="six wide column" id="answer"> 
+			 <?php
+          	   echo "R= Mediana: ".mediana([4,10,2,7,8,9])."<br />";
+       		   echo "R= Mediana: ".mediana([7,8,6,5,2,1])."<br />";
+             ?>	
+		  </div>	
+    	</div>
+		<div class="row">
+		  <div class="seven wide column" id="problema">
+			  <p>Una función que reciba un arreglo de números y muestre la lista de números, y como ítems de una lista html muestre el promedio, la media, y el arreglo ordenado de menor a mayor, y posteriormente de mayor a menor.</p>
+			  <p>Datos: $arr = array(1,5,6,3,7,9) y $arr2 = array(6,16,4,32,2,9)</p>
+		  </div>
+		  <div class="six wide column" id="answer">
+			  <?php
+				echo lista($arr)."<br />";
+				echo lista($arr2)."<br />";
+			  ?>
+		  </div>	
+    	</div>
+		<div class="row">
+		  <div class="seven wide column" id="problema">
+			  <p>Una función que imprima una tabla html, que muestre los cuadrados y cubos de 1 hasta un número n.</p>
+			  <p>Datos: Numero = 5 y Numero = 8</p>
+		  </div>
+		  <div class="six wide column" id="answer"> 
+			  <?php
+				echo tablas(5);
+				echo tablas(8);
+				?> 
+		  </div>	
+    	</div>
+			
+  	</div>
+    </body>
+    
+    <footer>
+        <p>Esta página fue creada con el editor <a href="http://brackets.io/">Brackets</a></p>
+        <p>Esta página fue hecha por: Maritza Rosales. Se utilizan imágenes ajenas con el único fin de ilustrar. </p><br>
+    </footer>
+    
+
+</html>
