@@ -74,8 +74,4 @@ $arr2=array(6,16,4,32,2,9);
 
 
 include("Lab9-DAW.html");
-
-
-
-
 ?>
