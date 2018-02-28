@@ -1,0 +1,86 @@
+<div class="section orange center white-text uppercase">
+    <h4>Más información</h4>
+</div>
+
+<div class="container">
+    <h4>Enviar petición</h4>
+    <form class="col s12" method="POST" action="validarPeticion.php">
+        <div class="row">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="nombre" id="nombre" type="text" class="validate" maxlength="30">
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input name="apellido" id="apellido" type="text" class="validate" maxlength="30">
+                    <label for="apellido">Apellido</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input name="asunto" id="asunto" type="text" class="validate" maxlength="50" required >
+                    <label for="asunto">Asunto</label>
+                </div>
+                <div class="input-field col s6">
+                    <input name="email" id="email" type="email" class="validate" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+                    <label for="email">Correo electrónico</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input name="descripcion" id="descripcion" type="text" class="validate" required>
+                    <label for="descripcion">Descripción</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+        <i class="material-icons right">send</i>
+  </button>
+    </form>
+</div>
+
+<!-- Preguntas  -->
+<div class="section indigo darken-4 center white-text uppercase">
+    <h4>Preguntas</h4>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#question1">Pregunta 1</a></li>
+                <li class="tab"><a href="#question2">Pregunta 2</a></li>
+                <li class="tab"><a href="#question3">Pregunta 3</a></li>
+                <li class="tab"><a href="#question4">Pregunta 4</a></li>
+            </ul>
+        </div>
+        <div class="card-content grey lighten-4">
+            <div id="question1">
+                <span>¿Por qué es una buena práctica separar el controlador de la vista?.</span>
+                <p>Porque en caso de mantenimiento, es más sencillo acceder sólo a la parte que se necesita modificar, en lugar de tener que buscar dentro de un enorme bloque de código.</p>
+            </div>
+            <div id="question2">
+                <span>Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?</span>
+                <ul>
+                    <li><strong>$_ENV </strong>Es una variable tipo array asociativo de variables pasadas al script actual a través del método del entorno.</li>
+                    <li><strong>$_SERVER </strong>Es un array que contiene información como cabeceras, rutas y ubicaciones de script. Tales entradas son creadas por el servidor web.</li>
+                    <li><strong>$_FILES </strong>Es un array asociativo de elementos subidos al script en curso a través del método POST</li>
+                    <li><strong>$_COOKIE </strong>Es una variable tipo array asociativo de variables pasadas al script actual a través de Cookies HTTP.</li>
+                    <li><strong>$_SESSION </strong>Es un array asociativo que contiene variables de sesión disponibles para el script actual.</li>
+                    <li><strong>$_REQUEST </strong>Es un array asociativo que por defecto contiene el contenido de $_GET, $_POST y $_COOKIE.</li>
+                </ul>
+            </div>
+            <div id="question3">
+                <span>Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.</span>
+                <ul>
+                    <li><strong>glob </strong>Buscar coincidencias de nombres de ruta con un patrón.</li>
+                    <li><strong>key </strong>Obtiene una clave de un array.</li>
+                </ul>
+            </div>
+            <div id="question4">
+                <span>¿Qué es XSS y cómo se puede prevenir?</span>
+                <p>XSS (Cross-Site Scripting) es un tipo de "ataque" que puede sufrir una aplicación web cuando una tercera persona "inyecta" código javascript o de otro lenguaje en la página web, evitando las medidas de control. Para prevenir esto, se pueden utilizar funciones de PHP como htmlspecialchars(), htmlentities() y strip_tags().</p>
+            </div>
+        </div>
+    </div>
+</div>
