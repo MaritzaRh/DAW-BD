@@ -1,0 +1,42 @@
+  
+  <!-- Modal Structure -->
+
+      <h4>Update Account</h4>
+      
+      
+      <div class="row">
+    <form class="col s12" method="POST" action="save.php">
+      <input name="id_user" id="id_user" type="hidden" value="<?=$data["id_user"];?>">
+      <div class="row">
+        <div class="input-field col s4">
+          <input id="Name" name="Name" type="text" class="validate" value="<?php echo $data["Name"]; ?>">
+          <label for="Name">First Name</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="Lastname" name="Lastname" type="text" class="validate" value="<?php echo $data["Lastname"]; ?>">
+          <label for="Lastname">Last Name</label>
+        </div>
+        <div class="input-field col s4">
+          <input id="S_Lastname" name="S_Lastname"type="text" class="validate" value="<?php echo $data["S_Lastname"]; ?>">
+          <label for="S_Lastname">Second LN</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="Email" name="Email" type="email" class="validate" value="<?php echo $data["Email"]; ?>">
+          <label for="Email">Email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="Phone" name="Phone"type="text" class="validate" value="<?php echo $data["Phone"]; ?>">
+          <label for="Phone">Phone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="Address" name="Address"type="text" class="validate" value="<?php echo $data["Address"]; ?>">
+          <label for="Address">Address</label>
+        </div>
+      </div>
+      <input class="btn waves-effect waves-light" type="submit" name ="submit" value="Submit"/>
+    </form>
+  </div>
