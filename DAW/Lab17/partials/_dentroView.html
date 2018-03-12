@@ -1,0 +1,28 @@
+<?php if($_SESSION["opcion"] == 0): ?>
+    
+    <?php echo inicial(); ?>
+
+<?php endif; ?>
+
+<?php if($_SESSION["opcion"] == 1): ?>
+    
+    <?php echo getInfoCliente($_SESSION["usuario"]); ?>
+
+<?php endif; ?>
+
+<?php if($_SESSION["opcion"] == 2): ?>
+    
+    <?php echo getInfoCliente($_SESSION["usuario"]); ?>
+
+<?php endif; ?>
+
+<?php if($_SESSION["opcion"] == 3): ?>
+    
+    <?php echo getTransaccion($_SESSION["usuario"]); ?>
+
+<?php endif; ?>
+<?php if($_SESSION["opcion"] == 4): ?>
+    
+    <?php echo getTransaccion($_SESSION["usuario"]); ?>
+
+<?php endif; ?>
